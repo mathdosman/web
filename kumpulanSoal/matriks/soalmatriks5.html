@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4649430696681971"
+     crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WWKYNJM30L');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>Latihan Soal Matriks (V)</title>
+  </head>
+  <body id="home">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+      <div class="container">
+        <a href="../../"><img src="../../home/logonew.png" alt="logo" width="55" height="55" class="rounded-circle" /></a>
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/daftarisimateri.html">Daftar Materi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Soal </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/kumpulanSoal/">Soal Latihan</a></li>
+                <li><a class="dropdown-item" href="/soalUlangan/">Soal Ulangan</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- START FORM KUIS -->
+    <section id="kontak">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-md-9" style="padding-top: 5rem">
+              <h2 class="text-center">Latihan Soal Matriks (V)</h2>
+              <p class="fst-italic text-center"> Math_Dosman</p>
+            <form name="matrikskisikisi-form">
+              <div class="mb-3">
+                <label for="absen" class="form-label"><b> No Absen </b></label>
+                <input type="number" class="form-control" id="absen" aria-describedby="absen" name="absen" required />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label"><b>Nama Lengkap</b></label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
+              </div>
+              <div class="mb-3">
+                <label for="kelas" class="form-label"><b>Kelas</b></label>
+                <select type="text" id="kelas" name="kelas" class="form-control" aria-placeholder="kelas" required>
+                  <option value="">-- Pilih Kelas --</option>
+                  <option value="XI MIPA 7">XI MIPA 7</option>
+                  <option value="XI MIPA 8">XI MIPA 8</option>
+                  <option value="XI MIPA 9">XI MIPA 9</option>
+                  <option value="XI IPS 1">XI IPS 1</option>
+                  <option value="XI IPS 2">XI IPS 2</option>
+                  <option value="XI IPS 3">XI IPS 3</option>
+                  <option value="">LAINNYA</option>
+                </select>
+              </div>
+              <hr />
+              
+              <ol type="1">
+                <li>Diketahui matriks \(A =\begin{pmatrix}3&-2&0 \\ -1&-4&3 \\4&2&1 \end{pmatrix}\) elemen pada baris kedua adalah . . .</li>
+                <input type="radio" name="soal1" value="0" />
+                \(3, -2, 0\)
+                <br />
+                <input type="radio" name="soal1" value="10" id="soal1"/>
+                \(-1, -4, 3\)
+                <br />
+                <input type="radio" name="soal1" value="0"  />
+                \(4, 2, 1\)
+                <br />
+                <input type="radio" name="soal1" value="0" />
+                \(-2, -4, 2\)
+                <br />
+                <input type="radio" name="soal1" value="0" />
+                \(3, 4, 1\)
+                <hr />
+                <!--========================= soal no 2 ===========================================================================-->
+                <li>Diketahui kesamaan matriks \(\begin{pmatrix}3x&2\\-1&2y\end{pmatrix}+\begin{pmatrix}y&-8\\5&3\end{pmatrix}=\begin{pmatrix}11&-6\\4&13\end{pmatrix}\), maka nilai \(x+y= ...\)</li>
+                <input type="radio" name="soal2" value="0" />
+                \(5\)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \(6\)
+                <br />
+                <input type="radio" name="soal2" value="10" id="soal2" />
+                \(7\)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \(8\)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \(9\)
+                <hr />
+                <!--================================================== soal no 3 ======================================================-->
+                <li>Jika \(\begin{pmatrix}5&3x+2x\\x-3y&-8\end{pmatrix}=\begin{pmatrix}5&5\\9&-8\end{pmatrix}\), nilai \(2x+5y\) adalah . . .</li>
+                <input type="radio" name="soal3" value="0"  />
+                \(-11\)
+                <br />
+                <input type="radio" name="soal3" value="10" id="soal3" />
+                \(-4\)
+                <br />
+                <input type="radio" name="soal3" value="0" />
+                \(1\)
+                <br />
+                <input type="radio" name="soal3" value="0" />
+                \(4\)
+                <br />
+                <input type="radio" name="soal3" value="0" />
+                \(11\)
+                <hr />
+                <!-- soal no no4 =================================================================================================-->
+                <li>Diketahui \(\begin{pmatrix}12&-7\\-6&20\end{pmatrix}+\begin{pmatrix}7&-2\\2x+3&x-y\end{pmatrix}=\begin{pmatrix}3y-5&-9\\x+y&23\end{pmatrix}\). Nilai \(4x-3y=...\)</li>
+                </li>
+                <input type="radio" name="soal4" value="0" />
+                \(-5\)
+                <br />
+                <input type="radio" name="soal4" value="0" />
+                \(-1\)
+                <br />
+                <input type="radio" name="soal4" value="0" />
+                \(8\)
+                <br />
+                <input type="radio" name="soal4" value="0"  />
+                \(11\)
+                <br />
+                <input type="radio" name="soal4" value="10" id="soal4"/>
+                \(20\)
+                <hr />
+                <!-- soal no 5 ================================================================================================-->
+                <li>Diketahui matriks \(A=\begin{pmatrix}3&2\\-1&4\end{pmatrix}\), \(B=\begin{pmatrix}1&3\\2&-1\end{pmatrix}\), dan \(C=\begin{pmatrix}7&4\\3&2\end{pmatrix}\). Matriks \(A-B+C=...\)</li>
+                <input type="radio" name="soal5" value="10" id="soal5"/>
+                \(\begin{pmatrix}9&3\\0&7\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal5" value="0" />
+                \(\begin{pmatrix}-3&1\\-2&1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal5" value="0"   />
+                \(\begin{pmatrix}11&9\\4&5\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal5" value="0"/>
+                \(\begin{pmatrix}3&9\\5&4\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal5" value="0" />
+                \(\begin{pmatrix}-3&9\\4&5\end{pmatrix}\)
+                <hr />
+                <!-- =====SOAL NO 6======================================================================= -->
+                <li>Diketahui matriks \(A=\begin{pmatrix}-1&2\\3&1\end{pmatrix}\), dan \(B=\begin{pmatrix}3&-2\\1&4\end{pmatrix}\). Nilai 3A+2B=</li>
+                <input type="radio" name="soal6" value="0"  />
+                \(\begin{pmatrix}-9&-10\\7&-5\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \(\begin{pmatrix}9&10\\-7&5\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal6" value="10" id="soal6"/>
+                \(\begin{pmatrix}3&2\\11&11\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \(\begin{pmatrix}-3&-2\\-11&-11\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \(\begin{pmatrix}3&-2\\-11&11\end{pmatrix}\)
+                <hr />
+                <!-- =====SOAL NO 7======================================================================= -->
+                <li>Diketahui \(A=\begin{pmatrix}1&a\\2&-1\end{pmatrix}\), \(B=\begin{pmatrix}3&b\\a+b&1\end{pmatrix}\), dan \(C=\begin{pmatrix}-1&3\\8&-3\end{pmatrix}\). Jika \(2A-B=C^T\) dengan \(C^T\) adalah transpose dari matriks \(C\), nilai \(a-b=...\)</li>
+                <input type="radio" name="soal7" value="0" />
+                \(1\)
+                <br />
+                <input type="radio" name="soal7" value="0" />
+                \(2\)
+                <br />
+                <input type="radio" name="soal7" value="0" />
+                \(3\)
+                <br />
+                <input type="radio" name="soal7" value="0"  />
+                \(4\)
+                <br />
+                <input type="radio" name="soal7" value="10" id="soal7"/>
+                \(5\)
+                <hr />
+        <!-- =====SOAL NO 8======================================================================= -->
+                <li>Jika \(\begin{pmatrix}3&4y\\-6&15\end{pmatrix}=3\begin{pmatrix}1&-8\\-2&5\end{pmatrix}\), nilai \(y=...\)</li>
+                <input type="radio" name="soal8" value="10" id="soal8"/>
+                \(-6\)
+                <br />
+                <input type="radio" name="soal8" value="0" />
+                \(-3\)
+                <br />
+                <input type="radio" name="soal8" value="0"  />
+                \(2 \)
+                <br />
+                <input type="radio" name="soal8" value="0"  />
+                \(4 \)
+                <br />
+                <input type="radio" name="soal8" value="0" />
+                \(8\)
+                <hr />
+                <!-- =====SOAL NO 9======================================================================= -->
+                <li>Diketahui matriks \(A=\begin{pmatrix}2&3\\4&-2\end{pmatrix}\) dan \(B=\begin{pmatrix}2&1\\-1&3\end{pmatrix}\). Maka matriks \(AB^T=...\)</li>
+                <input type="radio" name="soal9" value="0" />
+                \(\begin{pmatrix}6&-10\\7&7\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal9" value="0" />
+                \(\begin{pmatrix}7&6\\-10&7\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal9" value="10"  />
+                \(\begin{pmatrix}-10&7\\6&7\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal9" value="10" id="soal9"/>
+                \(\begin{pmatrix}7&7\\6&-10\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal9" value="0" />
+                \(\begin{pmatrix}7&-10\\6&7\end{pmatrix}\)
+                <hr />
+                <!-- =====SOAL NO 10======================================================================= -->
+                <li>Diketahui matriks \(A=\begin{pmatrix}a&b\\0&1\end{pmatrix}\),\(B=\begin{pmatrix}6&1\\-8&7\end{pmatrix}\),\(C=\begin{pmatrix}2&-2\\1&c\end{pmatrix}\), \(D=\begin{pmatrix}1&-1\\0&2\end{pmatrix}\). Jika \(2A+B^T=CD\) dan \(B^T\)   adalah transpose \(B\), nilai \(a+b-c=...\)
+                </li>
+                <input type="radio" name="soal10" value="0" />
+                \(-8\)
+                <br />
+                <input type="radio" name="soal10" value="10" id="soal10"/>
+                \(-6\)
+                <br />
+                <input type="radio" name="soal10" value="0"  />
+                \(-4\)
+                <br />
+                <input type="radio" name="soal10" value="0" />
+                \(6\)
+                <br />
+                <input type="radio" name="soal10" value="0" />
+                \(8\)
+                <hr />
+                <!-- =====SOAL NO 11======================================================================= -->
+                <li>Jika \(A=\begin{pmatrix}2&-1\\3&5\end{pmatrix}\) dan \(B=\begin{pmatrix}3&2\\-1&4\end{pmatrix}\), nilai \((A-B)^2=...\)</li>
+                <input type="radio" name="soal11" value="10" id="soal11"/>
+                \(\begin{pmatrix}-11&0\\0&-11\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(\begin{pmatrix}0&-11\\-11&0\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(\begin{pmatrix}11&0\\0&11\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal11" value="0"  />
+                \(\begin{pmatrix}0&11\\11&0\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(\begin{pmatrix}-11&-11\\0&0\end{pmatrix}\)
+                <hr />
+                <!-- =====SOAL NO 12======================================================================= -->
+                <li>Jika \(2\begin{pmatrix}a&2\\-3&1\end{pmatrix}+\begin{pmatrix}4&-1\\0&b\end{pmatrix}\)\(=\)\(\begin{pmatrix}3&2\\c&4\end{pmatrix}\begin{pmatrix}2&d\\1&3\end{pmatrix}\), nilai \(a+b+c+d=...\)
+                </li>
+                <input type="radio" name="soal12" value="10" id="soal12"/>
+                \(11\)
+                <br />
+                <input type="radio" name="soal12" value="0" />
+                \(13\)
+                <br />
+                <input type="radio" name="soal12" value="0"  />
+                \(15\)
+                <br />
+                <input type="radio" name="soal12" value="0" />
+                \(17\)
+                <br />
+                <input type="radio" name="soal12" value="0" />
+                \(19\)
+                <hr />
+                <!-- =====SOAL NO 13======================================================================= -->
+                <li>Diketahui matriks \(A=\begin{pmatrix}7&-2\\4&5\end{pmatrix}\) dan \(B=\begin{pmatrix}-2&5\\3&1\end{pmatrix}\).  Determinan matriks \(2A-3B\) adalah . . .</li>
+                <input type="radio" name="soal13" value="0"  />
+                \(159\)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(151\)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(142\)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(137\)
+                <br />
+                <input type="radio" name="soal13" value="10" id="soal13" />
+                \(121\)
+                <hr />
+                <!-- =====SOAL NO 14======================================================================= -->
+                <li>Diketahui \(A=\begin{pmatrix}-1&-3\\1&4\end{pmatrix}\) dan \(B=\begin{pmatrix}2&0\\3&-6\end{pmatrix}\). Maka nilai \(\text{det}(AB)\) adalah . . .</li>
+                <input type="radio" name="soal14" value="10" id="soal14"/>
+                \(12\)
+                <br />
+                <input type="radio" name="soal14" value="0"  />
+                \(14\)
+                <br />
+                <input type="radio" name="soal14" value="0" />
+                \(16\)
+                <br />
+                <input type="radio" name="soal14" value="0" />
+                \(18\)
+                <br />
+                <input type="radio" name="soal14" value="0" />
+                \(20\)
+                <hr />
+                <!-- =====SOAL NO 15======================================================================= -->
+                <li>Jika \(A=\begin{pmatrix}3&5&-1\\2&3&1\\-1&2&2\end{pmatrix}\), determinan \(A=...\)</li>
+                <input type="radio" name="soal15" value="0" />
+                \(30\)
+                <br />
+                <input type="radio" name="soal15" value="0"  />
+                \(10\)
+                <br />
+                <input type="radio" name="soal15" value="10" id="soal15"/>
+                \(-20\)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(-30\)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(-40\)
+                <hr />
+                <!-- =====SOAL NO 16======================================================================= -->
+                <li>Diketahui matriks \(P^{-1}=\begin{pmatrix}3&2\\-1&1\end{pmatrix}\) dan matriks \(Q=\begin{pmatrix}1&4\\-2&-1\end{pmatrix}\). Hasil dari \((PQ^{-1} )^{-1}=...\)</li>
+                <input type="radio" name="soal16" value="0" />
+                \(\begin{pmatrix}-5&6\\-5&-1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal16" value="0"  />
+                \(\begin{pmatrix}1&6\\-5&-5\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal16" value="0" />
+                \(\begin{pmatrix}1&6\\5&5\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal16" value="10" id="soal16"/>
+                \(\begin{pmatrix}-1&6\\-5&-5\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal16" value="0" />
+                \(\begin{pmatrix}-5&-6\\5&1\end{pmatrix}\)
+                <hr />
+                <!-- =====SOAL NO 17======================================================================= -->
+                <li>Diketahui matriks \(A=\begin{pmatrix}1&-2\\-1&3\end{pmatrix}\) dan matriks \(B=\begin{pmatrix}2&1\\-1&-1\end{pmatrix}\). Invers dari matriks \(AB\) adalah . . . </li>
+                <input type="radio" name="soal17" value="0" />
+                \(\begin{pmatrix}4&-3\\5&-4\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal17" value="0" />
+                \(\begin{pmatrix}-4&-3\\5&4\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal17" value="10" id="soal17" />
+                \(\begin{pmatrix}4&3\\-5&-4\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal17" value="0" />
+                \(\begin{pmatrix}-4&3\\-5&4\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal17" value="0" />
+                \(\begin{pmatrix}4&3\\5&-4\end{pmatrix}\)
+                <hr />
+                <!-- =====SOAL NO 18======================================================================= -->
+                <li>Matriks \(X\) yang memenuhi \(X\begin{pmatrix}2&-1\\1&3\end{pmatrix}=\begin{pmatrix}3&2\\5&1\end{pmatrix}\) adalah . . .</li>
+                <input type="radio" name="soal18" value="0" />
+                \(\begin{pmatrix}1&2\\1&1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal18" value="0"  />
+                \(\begin{pmatrix}1&1\\1&2\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal18" value="0" />
+                \(\begin{pmatrix}-1&2\\1&1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal18" value="0" />
+                \(\begin{pmatrix}2&1\\-1&1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal18" value="10" id="soal18" />
+                \(\begin{pmatrix}1&1\\2&1\end{pmatrix}\)
+                <hr />
+                <!-- =====SOAL NO 19======================================================================= -->
+                <li>Diketahui matriks \(A=\begin{pmatrix}1&2\\1&3\end{pmatrix}\) dan \(B=\begin{pmatrix}4&1\\1&3\end{pmatrix}\). Matriks \(C\) berordo \(2 \times 2\) memenuhi \(AC=B\). Determinan matriks \(C\) adalah . . .</li>
+                <input type="radio" name="soal19" value="0" />
+                \(12\)
+                <br />
+                <input type="radio" name="soal19" value="10"  id="soal19"/>
+                \(11\)
+                <br />
+                <input type="radio" name="soal19" value="0" />
+                \(9\)
+                <br />
+                <input type="radio" name="soal19" value="0" />
+                \(6\)
+                <br />
+                <input type="radio" name="soal19" value="0" />
+                \(1\)
+                <hr />
+                <!-- =====SOAL NO 20======================================================================= -->
+                <li>Jumlah umur kakak dan dua kali umur adik adalah \(27\) tahun. Selisih umur kakak dan umur adik adalah \(3\) tahun. Jika umur kakak \(x\) tahun dan umur adik \(y\) tahun, persamaan matriks yang sesuai dengan permasalahan tersebut adalah . . .</li>
+                <input type="radio" name="soal20" value="0" />
+                \(\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}2&1\\1&-1\end{pmatrix}\begin{pmatrix}9\\1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal20" value="0"  />
+                \(\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}2&-1\\1&1\end{pmatrix}\begin{pmatrix}9\\1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal20" value="0" />
+                \(\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}1&2\\1&-1\end{pmatrix}\begin{pmatrix}9\\1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal20" value="0" />
+                \(\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}-1&2\\1&1\end{pmatrix}\begin{pmatrix}9\\1\end{pmatrix}\)
+                <br />
+                <input type="radio" name="soal20" value="10" id="soal20"/>
+                \(\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}1&-2\\1&-1\end{pmatrix}\begin{pmatrix}9\\1\end{pmatrix}\)
+                <hr />
+              </ol>
+              <!-- ------------------------------------------------------------------------------------------------------------------- -->
+              <!-- Batas no SOAL -->
+              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Terima kasih</strong> Jawaban sudah tersimpan.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="row justify-content-center text-center">
+                <div class="col">
+                  <button type="submit" class="btn btn-primary btn-kirim" onclick="kirim()">KIRIM</button>
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <div class="sticky-top" style="padding-top: 5rem">
+              <!--======tombol offcanvas ========-->
+              <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">KLIK UNTUK MELIHAT KUNCI JAWABAN</button>
+              <!-- =====tombol offcanvas======= -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- SOAL KUIS END-->
+    <!-- START OFFCANVAS KUNCI -->
+    <!-- ================================================================================================================================ -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          KUNCI JAWABAN <br />
+          Latihan Soal Matriks II
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div class="col">
+            <ol>
+              <li>B</li>
+              <li>C</li>
+              <li>B</li>
+              <li>E</li>
+              <li>A</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="6">
+              <li>C</li>
+              <li>E</li>
+              <li>A</li>
+              <li>D</li>
+              <li>B</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="11">
+              <li>A</li>
+              <li>A</li>
+              <li>E</li>
+              <li>A</li>
+              <li>C</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="16">
+              <li>D</li>
+              <li>C</li>
+              <li>E</li>
+              <li>B</li>
+              <li>E</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================================================================================================================================ -->
+    <!-- END KUNCI -->
+
+    <script>
+      function kirim() {
+        const soal1 = document.querySelector('#soal1');
+        const soal2 = document.querySelector('#soal2');
+        const soal3 = document.querySelector('#soal3');
+        const soal4 = document.querySelector('#soal4');
+        const soal5 = document.querySelector('#soal5');
+        const soal6 = document.querySelector('#soal6');
+        const soal7 = document.querySelector('#soal7');
+        const soal8 = document.querySelector('#soal8');
+        const soal9 = document.querySelector('#soal9');
+        const soal10 = document.querySelector('#soal10');
+        const soal11 = document.querySelector('#soal11');
+        const soal12 = document.querySelector('#soal12');
+        const soal13 = document.querySelector('#soal13');
+        const soal14 = document.querySelector('#soal14');
+        const soal15 = document.querySelector('#soal15');
+
+        const nilai = document.querySelector('#nilai');
+
+        let poin = 0;
+        if (soal1.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal2.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal3.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal4.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal5.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal6.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal7.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal8.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal9.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal10.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal11.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal12.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal13.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal14.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal15.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        nilai.innerHTML = (poin * 10) / 15;
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbySBf2nnfEUO7Y8dUydSr2xBhHR9wuU0A4YbJ3KBksffHEJtqFVI9DcZ7wDSKViIgeq/exec';
+      const form = document.forms['matrikskisikisi-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol KIRIM, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //  tambahkan Alert
+            myAlert.classList.toggle('d-none');
+            console.log('Success!', response);
+
+            // form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white d-flex justify-content-center">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold fst-italic" style="text-decoration: none">I Putu Darma Putra</a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-4649430696681971">
+</amp-auto-ads>
+  </body>
+</html>

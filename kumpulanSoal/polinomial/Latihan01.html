@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async custom-element="amp-auto-ads"
+    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4649430696681971"
+    crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-WWKYNJM30L');
+</script>
+    
+<!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+<!-- mathjax -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="style.css" />
+<title>Polinomial - Latihan 01</title>
+</head>
+<body id="home">
+<!-- navbar start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+        <a href="../../"><img src="/home/logonew.png" alt="logo" width="55" height="55" class="rounded-circle" /></a>
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/daftarisimateri.html">Daftar Materi</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+</nav>
+    <!-- navbar end -->
+
+<!-- START FORM KUIS -->
+<section id="kontak">
+    <div class="container p-2">
+        <div class="row justify-content-center">
+            <div class="col-md-9 p-2">
+            <h2 class="text-center">Polinomial - Latihan 01</h2>
+            <p class="text-center fst-italic"> Math_Dosman</p>
+            <form name="polinomial-form">
+                <div class="mb-3">
+                    <label for="materi" class="form-label"><b>Materi</b></label>
+                    <select type="text" id="materi" name="materi" class="form-control" aria-placeholder="materi" required>
+                    <option value="">-- Pilih Materi --</option>
+                    <option value="Polinomial 01">Polinomial (Suku Banyak) 01</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="absen" class="form-label"><b> No Absen </b></label>
+                    <input type="number" class="form-control" id="absen" aria-describedby="absen" name="absen" required />
+                    </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label"><b>Nama Lengkap</b></label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
+                </div>
+                <div class="mb-3">
+                    <p class="fw-bold">Contoh : XI MIPA 1 atau XI IPS 1</p>
+                    <label for="kelas" class="form-label"><b>Kelas</b></label>
+                    <input type="text" class="form-control" id="kelas" aria-describedby="kelas" name="kelas" required />
+                </div>
+            <hr />
+            <ol type="1">
+<!--=======================  soal no 1 ===================================-->
+            <li>Hasil bagi dan sisa dari pembagian polinom \(p(x)=x^3+2x^2-x+1\) dibagi  \((x-2)\) berturut-turut adalah . . .
+             </li>
+                <input type="radio" name="soal1" value="10"/>
+                \(\displaystyle (x^2+4x+7) \text{ dan } 15\)
+                <br />
+                <input type="radio" name="soal1" value="0" />
+                \(\displaystyle (x^2+4x-7) \text{ dan } 15\)
+                <br />
+                <input type="radio" name="soal1" value="0"  />
+                \(\displaystyle (x^2+4x-7) \text{ dan } 10\)
+                <br />
+                <input type="radio" name="soal1" value="0" />
+                \(\displaystyle (x^2-4x+7) \text{ dan } 10\)
+                <br />
+                <input type="radio" name="soal1" value="0"/>
+                \(\displaystyle (x^2-4x-7) \text{ dan } 5\)
+                <br>
+                <hr />
+<!--=======================  soal no 2 ===================================-->
+            <li>	Hasil bagi dan sisa pembagian dari suku banyak \(p(x)=x^4-3x^3-5x^2+x-6\) dibagi oleh \(x^2-x-2\) berturut-turut adalah . . . </li>
+                <input type="radio" name="soal2" value="10"/>
+                \(\displaystyle  x^2-2x-5\) dan \(-8x-16\)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \(\displaystyle x^2-2x-5\) dan \(-8x+16 \)
+                <br />
+                <input type="radio" name="soal2" value="0"  />
+                \(\displaystyle x^2-2x-5\) dan   \(8x+16 \)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \(\displaystyle x^2-2x+5\) dan  \(8x+16\)
+                <br />
+                <input type="radio" name="soal2" value="0"/>
+                \(\displaystyle x^2+2x+5\) dan \(-8x+16\)
+                <br>
+                <hr />
+<!--=======================  soal no 3 ===================================-->
+            <li>Salah satu faktor suku banyak \(p(x)=2x^3-5x^2+px+3\) adalah \((x+1)\). Faktor linear lainnya dari suku banyak tersebut adalah . . . </li>
+                <input type="radio" name="soal3" value="0"/>
+                \(\displaystyle x-1 \)
+                <br />
+                <input type="radio" name="soal3" value="0" />
+                \(\displaystyle x-2 \)
+                <br />
+                <input type="radio" name="soal3" value="0"  />
+                \(\displaystyle x+2 \)
+                <br />
+                <input type="radio" name="soal3" value="10" />
+                \(\displaystyle  2x-1\)
+                <br />
+                <input type="radio" name="soal3" value="0"/>
+                \(\displaystyle 2x+1 \)
+                <br>
+                <hr />
+<!--=======================  soal no 4 ===================================-->
+            <li>Suku banyak berderajat \(3\) jika dibagi \((x^2-x-6)\) bersisa \((5x-2)\). Jika dibagi \((x^2-2x-3)\) bersisa \((3x+4)\). Suku banyak tersebut adalah . . . </li>
+                <input type="radio" name="soal4" value="0"/>
+                \(\displaystyle x^3-2x^2+x-4 \)
+                <br />
+                <input type="radio" name="soal4" value="0" />
+                \(\displaystyle x^3-2x^2-x+4 \)
+                <br />
+                <input type="radio" name="soal4" value="0"  />
+                \(\displaystyle x^3-2x^2-x-4 \)
+                <br />
+                <input type="radio" name="soal4" value="10" />
+                \(\displaystyle x^3-2x^2+4 \)
+                <br />
+                <input type="radio" name="soal4" value="0"/>
+                \(\displaystyle x^3-2x^2-4 \)
+                <br>
+                <hr />
+<!--=======================  soal no 5 ===================================-->
+            <li>Suku banyak \(x^3+3x^2+9x+3\) membagi habis \(x^4+4x^3+2ax^2+4bx+c\). Nilai \(a+b\) adalah . . . </li>
+                <input type="radio" name="soal5" value="10"/>
+                \(\displaystyle 12 \)
+                <br />
+                <input type="radio" name="soal5" value="0" />
+                \(\displaystyle 10 \)
+                <br />
+                <input type="radio" name="soal5" value="0"  />
+                \(\displaystyle 9 \)
+                <br />
+                <input type="radio" name="soal5" value="0" />
+                \(\displaystyle 6 \)
+                <br />
+                <input type="radio" name="soal5" value="0"/>
+                \(\displaystyle 3 \)
+                <br>
+                <hr />
+<!--=======================  soal no 6 ===================================-->
+            <li>Diketahui suku banyak \(p(x)=2x^4+ax^3-3x^2+5x+b\). Jika \(p(x)\) dibagi \((x-1)\) sisa \(11\) dan dibagi \((x+1)\) sisa \(-1\), maka nilai \((2a+b)...\) </li>
+                <input type="radio" name="soal6" value="0"/>
+                \(\displaystyle 13 \)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \(\displaystyle 10 \)
+                <br />
+                <input type="radio" name="soal6" value="10"  />
+                \(\displaystyle 8 \)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \(\displaystyle 7\)
+                <br />
+                <input type="radio" name="soal6" value="0"/>
+                \(\displaystyle 6\)
+                <br>
+                <hr />
+<!--=======================  soal no 7 ===================================-->
+            <li>Diketahui \((x-2)\) dan \((x-1)\) merupakan faktor dari suku banyak \(p(x)=x^3+ax^2-13x+b\). Jika \(p(x)=0\) mempunyai akar-akar \(x_1,x_2,x_3\)   untuk \(x_1>x_2>x_3\). Maka nilai dari ekspresi \(x_1-(x_2+x_3)\) adalah . . .  </li>
+                <input type="radio" name="soal7" value="0"/>
+                \(\displaystyle 8 \)
+                <br />
+                <input type="radio" name="soal7" value="10" />
+                \(\displaystyle 6 \)
+                <br />
+                <input type="radio" name="soal7" value="0"  />
+                \(\displaystyle 4 \)
+                <br />
+                <input type="radio" name="soal7" value="0" />
+                \(\displaystyle -4 \)
+                <br />
+                <input type="radio" name="soal7" value="0"/>
+                \(\displaystyle -6 \)
+                <br>
+                <hr />
+<!--=======================  soal no 8 ===================================-->
+            <li>Suku banyak \(x^3+2x^2-px+q\) jika dibagi \((2x-4)\) bersisa \(16\) dan jika dibagi \((x+2)\) bersisa \(20\). Nilai dari \(p+q\) adalah . . .</li>
+                <input type="radio" name="soal8" value="0"/>
+                \(\displaystyle 10 \)
+                <br />
+                <input type="radio" name="soal8" value="10" />
+                \(\displaystyle 15 \)
+                <br />
+                <input type="radio" name="soal8" value="0"  />
+                \(\displaystyle 19 \)
+                <br />
+                <input type="radio" name="soal8" value="0" />
+                \(\displaystyle 20 \)
+                <br />
+                <input type="radio" name="soal8" value="0"/>
+                \(\displaystyle 25 \)
+                <br>
+                <hr />
+<!--=======================  soal no 9 ===================================-->
+            <li>Suku banyak \(f(x)\) dibagi \((x-2)\) sisa \(1\), dibagi \((x+3)\) sisa \(-8\). Suku banyak \(g(x)\) dibagi \((x-2)\) sisa \(9\), dibagi \((x+3)\) sisa \(2\). Jika \(h(x)=f(x) \times g(x)\), maka sisa pembagian \(h(x)\) dibagi \(x^2+x-6\) adalah . . .</li>
+                <input type="radio" name="soal9" value="0"/>
+                \(\displaystyle 7x-1 \)
+                <br />
+                <input type="radio" name="soal9" value="0" />
+                \(\displaystyle 6x-1 \)
+                <br />
+                <input type="radio" name="soal9" value="10"  />
+                \(\displaystyle 5x-1 \)
+                <br />
+                <input type="radio" name="soal9" value="0" />
+                \(\displaystyle 4x-1 \)
+                <br />
+                <input type="radio" name="soal9" value="0"/>
+                \(\displaystyle 3x-1 \)
+                <br>
+                <hr />
+<!--=======================  soal no 10 ===================================-->
+            <li>Jika suku banyak \(p(x)=2x^4+ax^3-3x^2+5x+b\) dibagi oleh \((x^2-1)\) memberi sisa \((6x+5)\), maka nilai \(a \times b= ...\)</li>
+                <input type="radio" name="soal10" value="0"/>
+                \(\displaystyle -8 \)
+                <br />
+                <input type="radio" name="soal10" value="0" />
+                \(\displaystyle -6 \)
+                <br />
+                <input type="radio" name="soal10" value="0"  />
+                \(\displaystyle 3 \)
+                <br />
+                <input type="radio" name="soal10" value="10" />
+                \(\displaystyle 6 \)
+                <br />
+                <input type="radio" name="soal10" value="0"/>
+                \(\displaystyle 8\)
+                <br>
+                <hr />
+<!--=======================  soal no 11 ===================================-->
+            <li>Jika \(x^4+(a-10) x^3+bx^2+14x-15=f(x)(x-1)\), dengan \(f(x)\) habis dibagi \(x+1\), maka nilai \(a\) adalah . . . </li>
+                <input type="radio" name="soal11" value="0"/>
+                \(\displaystyle -8 \)
+                <br />
+                <input type="radio" name="soal11" value="10" />
+                \(\displaystyle -4 \)
+                <br />
+                <input type="radio" name="soal11" value="0"  />
+                \(\displaystyle 0 \)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(\displaystyle 2\)
+                <br />
+                <input type="radio" name="soal11" value="0"/>
+                \(\displaystyle 4\)
+                <br>
+                <hr />
+<!--=======================  soal no 12 ===================================-->
+            <li>Jika suku banyak \(p(x)\) habis dibagi \((x-1)\), maka sisa pembagian \(p(x)\) oleh \((x-1)(x+1)\) sama dengan . . .</li>
+                <input type="radio" name="soal12" value="0"/>
+                \(\displaystyle -\frac{p(-1)}{2}(1+x) \)
+                <br />
+                <input type="radio" name="soal12" value="0" />
+                \(\displaystyle -\frac{p(-1)}{2}(11x) \)
+                <br />
+                <input type="radio" name="soal12" value="0"  />
+                \(\displaystyle \frac{p(-1)}{2}(1+x) \)
+                <br />
+                <input type="radio" name="soal12" value="10" />
+                \(\displaystyle \frac{p(-1)}{2}(1-x) \)
+                <br />
+                <input type="radio" name="soal12" value="0"/>
+                \(\displaystyle \frac{p(-1)}{2}(x-1) \)
+                <br>
+                <hr />
+<!--=======================  soal no 13 ===================================-->
+            <li>Suku banyak \(p(x)=x^9-x\) difaktorkan menjadi suku banyak derajat sekecil-kecilnya dan koefisiennya bilangan bulat. banyak faktor suku banyak tersebut adalah . . .</li>
+                <input type="radio" name="soal13" value="0"/>
+                \(\displaystyle 9 \)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(\displaystyle 7 \)
+                <br />
+                <input type="radio" name="soal13" value="10"  />
+                \(\displaystyle 5 \)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(\displaystyle 3 \)
+                <br />
+                <input type="radio" name="soal13" value="0"/>
+                \(\displaystyle 1\)
+                <br>
+                <hr />
+<!--=======================  soal no 14 ===================================-->
+            <li>Persamaan polinomial \(x^3+3x^2-16x+n=0\) mempunyai sepasang akar yang berlawanan tanda, nilai \(n\) sama dengan . . . </li>
+                <input type="radio" name="soal14" value="0"/>
+                \(\displaystyle -52 \)
+                <br />
+                <input type="radio" name="soal14" value="10" />
+                \(\displaystyle -48 \)
+                <br />
+                <input type="radio" name="soal14" value="0"  />
+                \(\displaystyle 42 \)
+                <br />
+                <input type="radio" name="soal14" value="0" />
+                \(\displaystyle 48 \)
+                <br />
+                <input type="radio" name="soal14" value="0"/>
+                \(\displaystyle 52 \)
+                <br>
+                <hr />
+<!--=======================  soal no 15 ===================================-->
+            <li class="overflow-auto">Jika akar-akar persamaan \( \displaystyle \frac{1}{(x^2-10x-29)}+\frac{1}{(x^2-10x-45)}-\frac{1}{(x^2-10x-69)}=0\)
+                adalah \(a\) dan \(b\), maka nilai dari \(a+b=...\)                </li>
+                <input type="radio" name="soal15" value="0"/>
+                \(\displaystyle 10 \)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(\displaystyle 8 \)
+                <br />
+                <input type="radio" name="soal15" value="0"  />
+                \(\displaystyle 6  \)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(\displaystyle  -8 \)
+                <br />
+                <input type="radio" name="soal15" value="10"/>
+                \(\displaystyle -10 \)
+                <br>
+                <hr />
+
+            </ol>
+            <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <p>Pembahasan soal diatas dapat didownload pada link berikut</p>
+                        <p>password pdf : mathdosman.site</p>
+                        <a href="https://drive.google.com/file/d/1ru19M9cXuxm00i7gsgCSSbF5gb2mUwc5/view?usp=sharing" target="_blank"><h3>DOWNLOAD FILE</h3></a>
+                        <br>
+                        <h1 class="text-danger">TERIMA KASIH</h1>
+                        <p>www.mathdosman.site</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+<!-- Batas no SOAL -->
+<!-- ======================================PESAN DISQUS============================================= -->
+<div class="row">
+    <div class="col">
+        <div id="disqus_thread"></div>
+    </div>
+</div>
+<!-- ======================================PESAN DISQUS============================================= -->
+<div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+    <strong>Terima kasih</strong> Jawaban sudah tersimpan.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="row justify-content-center text-center">
+    <div class="col">
+
+        <button type="submit" class="btn btn-primary btn-kirim" onclick="kirim()">KIRIM JAWABAN</button>
+        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
+    </div>
+</div>
+            </form>
+        </div>
+            <div class="col-md-3 d-block p-2">
+                <div class="list-group sticky-sm-top">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true"> POLINOMIAL (SUKU BANYAK) </a>
+              <a href="#" class="list-group-item list-group-item-action">Polinomial - Latihan 01</a>
+            </div>
+            </div>
+        </div>
+</section>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxo5ISdZyfeTdu68AVaze60F6Rq_lZPvVb4i68iTKrKpTCGToCt0mWEEnmCqsYcQKKu/exec';
+        const form = document.forms['polinomial-form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then((response) => {
+            // tampilkan tombol KIRIM, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //  tambahkan Alert
+            myAlert.classList.toggle('d-none');G-WWKYNJM30L
+            })
+            .catch((error) => console.error('Error!', error.message));
+        });
+    </script>
+
+
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white d-flex justify-content-center">
+        <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold fst-italic" style="text-decoration: none">I Putu Darma Putra</a>
+        </p>
+    </footer>
+    <!-- footer end -->
+    <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-4649430696681971">
+</amp-auto-ads>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://mathdosman-site-soal.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</body>
+</html>

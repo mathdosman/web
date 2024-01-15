@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4649430696681971" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WWKYNJM30L');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>soal matriks I</title>
+  </head>
+  <body id="home">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+      <div class="container">
+        <a href="../../"><img src="../../home/logonew.png" alt="logo" width="55" height="55" class="rounded-circle" /></a>
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/daftarisimateri.html">Daftar Materi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Soal </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/kumpulanSoal/">Soal Latihan</a></li>
+                <li><a class="dropdown-item" href="/soalUlangan/">Soal Ulangan</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- START FORM KUIS -->
+    <div class="container pb-3">
+      <div class="row">
+        <div class="col-md-9" style="padding-top: 5rem">
+          <section id="kontak">
+            <div class="container">
+              <div class="row mb-3">
+                <div class="col text-center">
+                  <h2>Latihan Soal Matriks I</h2>
+                  Math_Dosman
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <form name="matriks1-form">
+                    <div class="mb-3">
+                      <label for="absen" class="form-label"><b> No Absen </b></label>
+                      <input type="number" class="form-control" id="absen" aria-describedby="absen" name="absen" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="name" class="form-label"><b>Nama Lengkap</b></label>
+                      <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="kelas" class="form-label"><b>Kelas</b></label>
+                      <select type="text" id="kelas" name="kelas" class="form-control" aria-placeholder="kelas" required>
+                        <option value="">-- Pilih Kelas --</option>
+                        <option value="XI MIPA 7">XI MIPA 7</option>
+                        <option value="XI MIPA 8">XI MIPA 8</option>
+                        <option value="XI MIPA 9">XI MIPA 9</option>
+                        <option value="XI IPS 1">XI IPS 1</option>
+                        <option value="XI IPS 2">XI IPS 2</option>
+                        <option value="XI IPS 3">XI IPS 3</option>
+                        <option value="">LAINNYA</option>
+                      </select>
+                    </div>
+                    <hr />
+                    <!-- SOAL 1 -->
+                    <ol type="1">
+                      <li>
+                        <!-- ----------------------------------------------------------------------------------------------------------------- -->
+                        Diketahui matriks \(A=\begin{pmatrix}2c-3b&2a+1\\a&b+7 \end{pmatrix}\) dan \(B=\begin{pmatrix}9&2\\b&c \end{pmatrix}\).Jika \(A=B^T\), maka nilai \(c=...\)
+                        <br />
+                        <ol type="A">
+                          <li>\(6\)</li>
+                          <li>\(8\)</li>
+                          <li>\(10\)</li>
+                          <li>\(12\)</li>
+                          <li>\(15\)</li>
+                        </ol>
+                        <select type="text" id="soal1" name="soal1" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal1">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="10">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno1"></div>
+                      </li>
+                      <hr />
+                      <!------------------------------- Start SOAL NO 2 --------------------------------------------------------------------->
+                      <li>
+                        Jika matriks \(A=\begin{pmatrix}x&4\\6&y \end{pmatrix}\), \(B=\begin{pmatrix}1&2\\3&4 \end{pmatrix}\), dan \(I\) matriks identitas memenuhi persamaan \(A=2B+I\), maka nilai \(y-x=...\)
+                        <br />
+                        <ol type="A">
+                          <li>\(6\)</li>
+                          <li>\(12\)</li>
+                          <li>\(24\)</li>
+                          <li>\(36\)</li>
+                          <li>\(48\)</li>
+                        </ol>
+                        <select type="text" id="soal2" name="soal2" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal2">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="10">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="0">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno2"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 2-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 3 --------------------------------------------------------------------->
+                      <li>
+                        Diketahui matriks $$\begin{pmatrix}x&4\\2&y \end{pmatrix}+2\begin{pmatrix}x+5&2\\3&9-y \end{pmatrix}=\begin{pmatrix}13&8\\8&20 \end{pmatrix}$$ nilai dari \(x+y=...\)
+                        <br />
+                        <ol type="A">
+                          <li>\(4\)</li>
+                          <li>\(2\)</li>
+                          <li>\(0\)</li>
+                          <li>\(-1\)</li>
+                          <li>\(-3\)</li>
+                        </ol>
+                        <select type="text" id="soal3" name="soal3" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal3">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="10">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno3"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 3-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 4 --------------------------------------------------------------------->
+                      <li>
+                        Diketahui matriks \(A=\begin{pmatrix}3&y\\5&-1 \end{pmatrix}\), \(B=\begin{pmatrix}x&5\\-3&6 \end{pmatrix}\) dan \(C=\begin{pmatrix}-3&-1\\y&9 \end{pmatrix}\). Jika \(A+B-C=\begin{pmatrix}8&5x\\-x&-4 \end{pmatrix}\),
+                        maka nilai \(x+2xy+y\) adalah . . .
+                        <br />
+                        <ol type="A">
+                          <li>\(8\)</li>
+                          <li>\(12\)</li>
+                          <li>\(18\)</li>
+                          <li>\(20\)</li>
+                          <li>\(22\)</li>
+                        </ol>
+                        <select type="text" id="soal4" name="soal4" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal4">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="0">D</option>
+                          <option value="10">E</option>
+                        </select>
+                        <div id="rno4"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 4-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 5 --------------------------------------------------------------------->
+                      <li>
+                        Jika \(p,q,r,s\) memenuhi persamaan $$\begin{pmatrix}p&q\\2r&s \end{pmatrix}-\begin{pmatrix}2s&r\\q&2p \end{pmatrix}=\begin{pmatrix}1&-1\\-1&1 \end{pmatrix}$$ maka nilai \(p+q+r+s=...\)
+                        <ol type="A">
+                          <li>\(0\)</li>
+                          <li>\(-5\)</li>
+                          <li>\(-7\)</li>
+                          <li>\(12\)</li>
+                          <li>\(20\)</li>
+                        </ol>
+                        <select type="text" id="soal5" name="soal5" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal5">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="10">C</option>
+                          <option value="0">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno5"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 5-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 6 --------------------------------------------------------------------->
+                      <li>
+                        Matriks \(A=\begin{pmatrix}5&a\\b&3c \end{pmatrix}\) dan \(B=\begin{pmatrix}2a+2&a+8\\a+4&3a-b \end{pmatrix}\). Jika \(2A=B^T\), maka nilai \(c=...\)
+                        <br />
+                        <ol type="A">
+                          <li>\(-2\)</li>
+                          <li>\(-1\)</li>
+                          <li>\(0\)</li>
+                          <li>\(1\)</li>
+                          <li>\(2\)</li>
+                        </ol>
+                        <select type="text" id="soal6" name="soal6" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal6">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="10">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno6"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 6-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 7 --------------------------------------------------------------------->
+                      <li>
+                        Jika \(A=\begin{pmatrix}1&1\\-1&1 \end{pmatrix}\) dan \(B=\begin{pmatrix}0&1\\1&0 \end{pmatrix}\). Maka \((A+B)(A-B)-(A-B)(A+B)=...\)
+                        <br />
+                        <ol type="A">
+                          <li>\(4\begin{pmatrix}-1&0\\0&1 \end{pmatrix}\)</li>
+                          <li>\(-4\begin{pmatrix}-1&0\\0&1 \end{pmatrix}\)</li>
+                          <li>\(4\begin{pmatrix}1&0\\0&1 \end{pmatrix}\)</li>
+                          <li>\(-4\begin{pmatrix}1&0\\0&1 \end{pmatrix}\)</li>
+                          <li>\(8\begin{pmatrix}1&0\\1&0 \end{pmatrix}\)</li>
+                        </ol>
+                        <select type="text" id="soal7" name="soal7" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal7">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="10">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="0">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno7"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 7-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 8 --------------------------------------------------------------------->
+                      <li>
+                        Diketahui \(A\) dan \(B\) berordo \(2 \times 2\). Harga \((A+B)^2\) adalah . . .
+                        <br />
+                        <ol type="A">
+                          <li>\(A^2+2AB+B^2\)</li>
+                          <li>\(A^2+AB+AB+B^2\)</li>
+                          <li>\(AA+2AB+BB\)</li>
+                          <li>\(A^2+AB+BA+B^2\)</li>
+                          <li>\(A^2+2BA+B^2\)</li>
+                        </ol>
+                        <select type="text" id="soal8" name="soal8" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal8">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="10">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno8"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 8-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 9 --------------------------------------------------------------------->
+                      <li>
+                        Matriks \(A=\begin{pmatrix}a&4\\2b&3c \end{pmatrix}\) dan \(B=\begin{pmatrix}2c-3b&2a+1\\a&b+7 \end{pmatrix}\). Supaya dipenuhi \(A=2B^t\), dengan \(B^t\) menyatakan matriks transpose dari \(B\), maka nilai \(c=...\)
+                        <br />
+                        <ol type="A">
+                          <li>2</li>
+                          <li>3</li>
+                          <li>5</li>
+                          <li>8</li>
+                          <li>10</li>
+                        </ol>
+                        <select type="text" id="soal9" name="soal9" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal9">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="0">C</option>
+                          <option value="10">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno9"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 9-------------------------------------------------------------------------- -->
+                      <!------------------------------- Start SOAL NO 10 --------------------------------------------------------------------->
+                      <li>
+                        Jika matriks \(A=\begin{pmatrix}2x&-2\\x&3y+2 \end{pmatrix}\), \(B=\begin{pmatrix}9&3x\\8&-4 \end{pmatrix}\) dan \(C=\begin{pmatrix}5&6\\-8&7 \end{pmatrix}\) memenuhi \(A+B=C^t\) dengan \(C^t\) tranpose matriks
+                        \(C\), maka \(2x+3y=...\)
+                        <br />
+                        <ol type="A">
+                          <li>\(3\)</li>
+                          <li>\(4\)</li>
+                          <li>\(5\)</li>
+                          <li>\(6\)</li>
+                          <li>\(7\)</li>
+                        </ol>
+                        <select type="text" id="soal10" name="soal10" class="form-control bg-secondary text-light mt-3 text-center" aria-placeholder="soal10">
+                          <option value="">--Pilih Jawaban--</option>
+                          <option value="0">A</option>
+                          <option value="0">B</option>
+                          <option value="10">C</option>
+                          <option value="0">D</option>
+                          <option value="0">E</option>
+                        </select>
+                        <div id="rno10"></div>
+                      </li>
+                      <hr />
+                      <!-- -----------------------END SOAL NO 10-------------------------------------------------------------------------- -->
+                    </ol>
+                    <!-- ------------------------------------------------------------------------------------------------------------------- -->
+                    <!-- Batas no SOAL -->
+                    <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                      <strong>Terima kasih</strong> Jawaban sudah tersimpan.
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div class="row justify-content-center text-center">
+                      <div class="col">
+                        <label for="" class="fs-1" name="nilai">Nilai : </label>
+                        <div id="nilai" class="fs-1"></div>
+                        <button type="submit" class="btn btn-primary btn-kirim" onclick="kirim()">KIRIM JAWABAN</button>
+                        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                          Loading...
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- SOAL KUIS END-->
+        </div>
+        <div class="col-md-3">
+          <div class="sticky-top" style="padding-top: 5rem">
+            <!--======tombol offcanvas ========-->
+            <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">KLIK UNTUK MELIHAT KUNCI JAWABAN</button>
+            <!-- =====tombol offcanvas======= -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ================================================================================================================================ -->
+    <!-- START OFFCANVAS KUNCI -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          KUNCI JAWABAN <br />
+          Latihan Soal Matriks I
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div class="col">
+            <ol>
+              <li>D</li>
+              <li>A</li>
+              <li>D</li>
+              <li>E</li>
+              <li>C</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="6">
+              <li>D</li>
+              <li>A</li>
+              <li>D</li>
+              <li>D</li>
+              <li>C</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END KUNCI -->
+    <!-- ================================================================================================================================ -->
+
+    <script>
+      function kirim() {
+        const soal1 = document.querySelector('#soal1');
+        const soal2 = document.querySelector('#soal2');
+        const soal3 = document.querySelector('#soal3');
+        const soal4 = document.querySelector('#soal4');
+        const soal5 = document.querySelector('#soal5');
+        const soal6 = document.querySelector('#soal6');
+        const soal7 = document.querySelector('#soal7');
+        const soal8 = document.querySelector('#soal8');
+        const soal9 = document.querySelector('#soal9');
+        const soal10 = document.querySelector('#soal10');
+
+        const nilai = document.querySelector('#nilai');
+
+        let poin = 0;
+        if (soal1.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal2.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal3.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal4.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal5.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal6.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal7.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal8.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal9.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal10.value == 10) {
+          poin = poin + 10;
+        } else {
+        }
+        nilai.innerHTML = poin;
+      }
+    </script>
+
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white d-flex justify-content-center">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="" class="text-white fw-bold">I Putu Darma Putra</a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx7GCaUxtGz1AfxaIDLZDkXiHXF-c2kLiO6hdZN-iMEhanmcn0FtgU8AukYJDSLk3nu/exec';
+      const form = document.forms['matriks1-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol KIRIM, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //  tambahkan Alert
+            myAlert.classList.toggle('d-none');
+            console.log('Success!', response);
+
+            // form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-4649430696681971"> </amp-auto-ads>
+  </body>
+</html>

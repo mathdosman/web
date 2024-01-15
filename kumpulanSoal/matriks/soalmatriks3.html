@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4649430696681971" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WWKYNJM30L');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <title>soal matriks III</title>
+  </head>
+  <body id="home">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top">
+      <div class="container">
+        <a href="../../"><img src="../../home/logonew.png" alt="logo" width="55" height="55" class="rounded-circle" /></a>
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/daftarisimateri.html">Daftar Materi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Soal </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/kumpulanSoal/">Soal Latihan</a></li>
+                <li><a class="dropdown-item" href="/soalUlangan/">Soal Ulangan</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- START FORM KUIS -->
+    <section id="kontak">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9" style="padding-top: 5rem">
+            <div class="row mb-3">
+              <div class="col text-center">
+                <h2>Latihan Soal Matriks III</h2>
+                Math_Dosman
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md">
+                <form name="matriks3-form">
+                  <div class="mb-3">
+                    <label for="absen" class="form-label"><b> No Absen </b></label>
+                    <input type="number" class="form-control" id="absen" aria-describedby="absen" name="absen" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="name" class="form-label"><b>Nama Lengkap</b></label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="kelas" class="form-label"><b>Kelas</b></label>
+                    <select type="text" id="kelas" name="kelas" class="form-control" aria-placeholder="kelas" required>
+                      <option value="">-- Pilih Kelas --</option>
+                      <option value="XI MIPA 7">XI MIPA 7</option>
+                      <option value="XI MIPA 8">XI MIPA 8</option>
+                      <option value="XI MIPA 9">XI MIPA 9</option>
+                      <option value="XI IPS 1">XI IPS 1</option>
+                      <option value="XI IPS 2">XI IPS 2</option>
+                      <option value="XI IPS 3">XI IPS 3</option>
+                      <option value="">LAINNYA</option>
+                    </select>
+                  </div>
+                  <hr />
+
+                  <!-- SOAL 1 -->
+                  <ol type="1">
+                    <li>Jika \(A=\begin{pmatrix}-1&1\\3&2 \end{pmatrix}, B=\begin{pmatrix}3&-1\\0&2 \end{pmatrix}\) dan \(C=\begin{pmatrix}2&-3\\2&3 \end{pmatrix}\) dan \(A+B-C^T = D^T\) maka \(D = ...\)</li>
+                    <input type="radio" name="soal1" value="0" />
+                    \(\begin{pmatrix}0&-2\\6&1 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal1" value="10" id="soal1" />
+                    \(\begin{pmatrix}0&6\\-2&1 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal1" value="0" />
+                    \(\begin{pmatrix}6&0\\-2&1 \end{pmatrix}\)<br />
+                    <input type="radio" name="soal1" value="0" />
+                    \(\begin{pmatrix}6&-2\\0&1 \end{pmatrix}\)<br />
+                    <input type="radio" name="soal1" value="0" />
+                    \(\begin{pmatrix}1&-2\\6&0 \end{pmatrix}\)<br />
+                    <hr />
+                    <!-- SOAL 2 -->
+                    <li>
+                      Diketahui matriks \(A=\begin{pmatrix}3&y\\5&-1 \end{pmatrix}\), \(B=\begin{pmatrix}x&5\\-3&6 \end{pmatrix}\) dan \(C=\begin{pmatrix}-3&-1\\y&9 \end{pmatrix}\). Jika \(A+B-C=\begin{pmatrix}8&5x\\-x&-4 \end{pmatrix}\),
+                      maka nilai \(x^2+2xy+y^2\) adalah . . .
+                    </li>
+                    <input type="radio" name="soal2" value="10" id="soal2" />
+                    6
+                    <br />
+                    <input type="radio" name="soal2" value="0" />
+                    12
+                    <br />
+                    <input type="radio" name="soal2" value="0" />
+                    24
+                    <br />
+                    <input type="radio" name="soal2" value="0" />
+                    36
+                    <br />
+                    <input type="radio" name="soal2" value="0" />
+                    48
+                    <hr />
+                    <!-- SOAL 3 -->
+                    <li>Diketahui \(\begin{pmatrix}3&5\\1&2 \end{pmatrix}\)\(\begin{pmatrix}a&0\\a+b&c+2 \end{pmatrix}\)=\(\begin{pmatrix}1&-5\\0&-2 \end{pmatrix}\). Nilai dari \(a+b-c=...\)</li>
+                    <input type="radio" name="soal3" value="0" />
+                    -4
+                    <br />
+                    <input type="radio" name="soal3" value="0" />
+                    -2
+                    <br />
+                    <input type="radio" name="soal3" value="0" />
+                    0
+                    <br />
+                    <input type="radio" name="soal3" value="10" id="soal3" />
+                    2
+                    <br />
+                    <input type="radio" name="soal3" value="0" />
+                    8
+                    <hr />
+                    <!-- SOAL 4 -->
+                    <li>Matriks \(A=\begin{pmatrix} a-b&a \\ a&a+b \end{pmatrix}\) tidak mempunyai invers bila . . .</li>
+                    <input type="radio" name="soal4" value="0" />
+                    \(a\) dan \(b\) sembarang
+                    <br />
+                    <input type="radio" name="soal4" value="0" />
+                    \(a \ne 0\), \(b \ne 0\), dan \(a=b\)
+                    <br />
+                    <input type="radio" name="soal4" value="0" />
+                    \(a \ne 0\), \(b \ne 0\), dan \(a=-b\)
+                    <br />
+                    <input type="radio" name="soal4" value="0" />
+                    \(a=0\) dan \(b\) sembarang
+                    <br />
+                    <input type="radio" name="soal4" value="10" id="soal4" />
+                    \(b=0\) dan \(a\) sembarang
+
+                    <hr />
+                    <!-- SOAL 5 -->
+                    <li>Jika \(A=\begin{pmatrix}2&5 \\ 1&3 \end{pmatrix}\) dan \(B=\begin{pmatrix}5&4 \\ 1&1 \end{pmatrix}\), maka determinan \((AB)^{-1}=...\)</li>
+                    <input type="radio" name="soal5" value="0" />
+                    -2
+                    <br />
+                    <input type="radio" name="soal5" value="10" />
+                    -1
+                    <br />
+                    <input type="radio" name="soal5" value="10" id="soal5" />
+                    1
+                    <br />
+                    <input type="radio" name="soal5" value="0" />
+                    2
+                    <br />
+                    <input type="radio" name="soal5" value="0" />
+                    3
+
+                    <hr />
+                    <!-- SOAL 6 -->
+                    <li>
+                      \(A'\) adalah transpose dari \(A\). Jika \(C=\begin{pmatrix}\frac{4}{7}&-\frac{1}{7} \\ -\frac{1}{7}&\frac{2}{7} \end{pmatrix} \), \(B=\begin{pmatrix}4&2 \\ 2&8 \end{pmatrix} \), dan \(A=C^{-1} \), maka determinan dari
+                      matriks \(A'B\) adalah . . .
+                    </li>
+                    <input type="radio" name="soal6" value="0" />
+                    -196
+                    <br />
+                    <input type="radio" name="soal6" value="0" />
+                    -188
+                    <br />
+                    <input type="radio" name="soal6" value="10" id="soal6" />
+                    188
+                    <br />
+                    <input type="radio" name="soal6" value="10" />
+                    196
+                    <br />
+                    <input type="radio" name="soal6" value="0" />
+                    212
+
+                    <hr />
+                    <!-- SOAL 7 -->
+                    <li>Matriks \(P\) yang memenuhi \(\begin{pmatrix}3&4 \\ 1&2 \end{pmatrix} P = \begin{pmatrix}2&1 \\ 4&3 \end{pmatrix}\) adalah . . .</li>
+                    <input type="radio" name="soal7" value="0" />
+                    \(\begin{pmatrix}-6&-5 \\ 5&-4 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal7" value="0" />
+                    \(\begin{pmatrix}-6&-5 \\ -5&4 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal7" value="10" id="soal7" />
+                    \(\begin{pmatrix}-6&-5 \\ 5&4 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal7" value="0" />
+                    \(\begin{pmatrix}-6&5 \\ 5&4 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal7" value="0" />
+                    \(\begin{pmatrix}-6&-5 \\ -5&-4 \end{pmatrix}\)
+
+                    <hr />
+
+                    <!-- SOAL 8 -->
+                    <li>Jika \(B=\begin{pmatrix}1&2 \\ 3&5 \end{pmatrix}\) dan \(AB^{-1}=\begin{pmatrix}2&1 \\ 4&3 \end{pmatrix}\), maka \(A=...\)</li>
+                    <input type="radio" name="soal8" value="10" id="soal8" />
+                    \(\begin{pmatrix}5&9 \\ 12&23 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal8" value="0" />
+                    \(\begin{pmatrix}5&3 \\ 9&13 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal8" value="0" />
+                    \(\begin{pmatrix}3&5 \\ 9&23 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal8" value="0" />
+                    \(\begin{pmatrix}13&5 \\ 2&10 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal8" value="0" />
+                    \(\begin{pmatrix}9&5 \\ 12&3 \end{pmatrix}\)
+
+                    <hr />
+                    <!-- SOAL 9 -->
+                    <li>Jika \(C\) adalah hasil perkalian matriks \(A\) dengan \(B\), yakni \(AB=C\) dengan \(C= \begin{pmatrix}6&7 \\ 19&18 \end{pmatrix}\) dan \(B=\begin{pmatrix}4&3 \\ 1&2 \end{pmatrix}\), maka \(A\) adalah . . .</li>
+                    <input type="radio" name="soal9" value="0" />
+                    \(\begin{pmatrix}1&4 \\ 2&3 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal9" value="0" />
+                    \(\begin{pmatrix}1&3 \\ 4&2 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal9" value="0" />
+                    \(\begin{pmatrix}1&-2 \\ -4&3 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal9" value="10" id="soal9" />
+                    \(\begin{pmatrix}1&2 \\ 4&3 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal9" value="0" />
+                    \(\begin{pmatrix}1&-3 \\ -4&2 \end{pmatrix}\)
+
+                    <hr />
+                    <!-- SOAL 10 -->
+                    <li>Jika matriks \(B\) adalah invers dari matriks \(A\) dan \(AC=B\), maka \(C=...\)</li>
+                    <input type="radio" name="soal10" value="0" />
+                    \(\begin{pmatrix}1&0 \\ 0&1 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal10" value="0" />
+                    \(\begin{pmatrix}0&0 \\ 0&0 \end{pmatrix}\)
+                    <br />
+                    <input type="radio" name="soal10" value="0" />
+                    \(A^2\)
+                    <br />
+                    <input type="radio" name="soal10" value="10" id="soal10" />
+                    \(B^2\)
+                    <br />
+                    <input type="radio" name="soal10" value="0" />
+                    \(AB\)
+                    <hr />
+
+                    <!-- SOAL 11 -->
+                    <li>
+                      Jika bilangan real \(a\), \(b\), dan \(c\) memenuhi persamaan \(a\begin{pmatrix}1 \\ 0 \\1 \end{pmatrix}-2b\begin{pmatrix}-1\\1\\0 \end{pmatrix}+c\begin{pmatrix}0\\-1\\1 \end{pmatrix}=\begin{pmatrix}1\\2\\1
+                      \end{pmatrix}\), maka \(a+b+c=...\)
+                    </li>
+                    <input type="radio" name="soal11" value="0" />
+                    \(\frac{1}{4}\)
+                    <br />
+                    <input type="radio" name="soal11" value="10" id="soal11" />
+                    \(\frac{1}{2}\)
+                    <br />
+                    <input type="radio" name="soal11" value="0" />
+                    \(0\)
+                    <br />
+                    <input type="radio" name="soal11" value="0" />
+                    \(1\)
+                    <br />
+                    <input type="radio" name="soal11" value="0" />
+                    \(2\)
+                    <hr />
+
+                    <!-- SOAL 12 -->
+                    <li>Diketahui persamaan \(x\begin{pmatrix}2\\5\\-2 \end{pmatrix}+y\begin{pmatrix}-1\\-6\\5 \end{pmatrix}=\begin{pmatrix}-7\\-21\\2x-1 \end{pmatrix}\). Nilai \(z=...\)</li>
+                    <input type="radio" name="soal12" value="0" />
+                    \(-2\)
+                    <br />
+                    <input type="radio" name="soal12" value="0" />
+                    \(3\)
+                    <br />
+                    <input type="radio" name="soal12" value="0" />
+                    \(0\)
+                    <br />
+                    <input type="radio" name="soal12" value="10" id="soal12" />
+                    \(6\)
+                    <br />
+                    <input type="radio" name="soal12" value="0" />
+                    \(30\)
+                    <hr />
+
+                    <!-- SOAL 13 -->
+                    <li>Nilai \(x\) yang memenuhi \(\begin{vmatrix}x&x \\ 2&x \end{vmatrix}=\begin{vmatrix}-2&-2 \\ 2&-2 \end{vmatrix}\) adalah . . .</li>
+                    <input type="radio" name="soal13" value="0" />
+                    \(0\)
+                    <br />
+                    <input type="radio" name="soal13" value="0" />
+                    \(-2\)
+                    <br />
+                    <input type="radio" name="soal13" value="0" />
+                    \(4\)
+                    <br />
+                    <input type="radio" name="soal13" value="10" id="soal13" />
+                    \(-2\) atau \(4\)
+                    <br />
+                    <input type="radio" name="soal13" value="0" />
+                    \(-4\) atau \(2\)
+                    <hr />
+
+                    <!-- SOAL 14============ -->
+                    <li>Jika matriks \(A=\begin{pmatrix}1&4 \\ 2&3 \end{pmatrix}\) dan \(I=\begin{pmatrix}1&0 \\ 0&1 \end{pmatrix}\) memenuhi persamaan \(A^2 =pA+qI\), maka \(p-q=...\)</li>
+                    <input type="radio" name="soal14" value="0" />
+                    \(16\)
+                    <br />
+                    <input type="radio" name="soal14" value="0" />
+                    \(9\)
+                    <br />
+                    <input type="radio" name="soal14" value="0" />
+                    \(8\)
+                    <br />
+                    <input type="radio" name="soal14" value="0" />
+                    \(1\)
+                    <br />
+                    <input type="radio" name="soal14" value="10" id="soal14" />
+                    \(-1\)
+                    <hr />
+
+                    <!-- SOAL 15 -->
+                    <li>Diketahui \(A=\begin{pmatrix}5+x & x \\ 5&3x \end{pmatrix}\) dan \(\begin{pmatrix}9&-x \\ 7&4 \end{pmatrix}\). Jika determinan \(A\) dan determinan \(B\) sama, maka harga \(x\) yang memenuhi adalah . . .</li>
+                    <input type="radio" name="soal15" value="0" />
+                    3 dan 4
+                    <br />
+                    <input type="radio" name="soal15" value="0" />
+                    -3 atau 4
+                    <br />
+                    <input type="radio" name="soal15" value="10" id="soal15" />
+                    3 atau -4
+                    <br />
+                    <input type="radio" name="soal15" value="0" />
+                    -4 atau 5
+                    <br />
+                    <input type="radio" name="soal15" value="0" />
+                    3 atau -5
+                    <hr />
+                  </ol>
+                  <!-- ------------------------------------------------------------------------------------------------------------------- -->
+                  <!-- Batas no SOAL -->
+                  <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                    <strong>Terima kasih</strong> Jawaban sudah tersimpan.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <div class="row justify-content-center text-center">
+                    <div class="col fs-2">
+                      <label for="" name="nilai"> <h3>Nilai :</h3></label>
+                      <div id="nilai"></div>
+                      <button type="submit" class="btn btn-primary btn-kirim" onclick="kirim()">KIRIM</button>
+                      <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="sticky-top" style="padding-top: 5rem">
+              <!--======tombol offcanvas ========-->
+              <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">KLIK UNTUK MELIHAT KUNCI JAWABAN</button>
+              <!-- =====tombol offcanvas======= -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- START OFFCANVAS KUNCI -->
+    <!-- ================================================================================================================================ -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+          KUNCI JAWABAN <br />
+          Latihan Soal Matriks III
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <div class="col">
+            <ol>
+              <li>B</li>
+              <li>A</li>
+              <li>D</li>
+              <li>E</li>
+              <li>C</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="6">
+              <li>C</li>
+              <li>C</li>
+              <li>A</li>
+              <li>D</li>
+              <li>D</li>
+            </ol>
+          </div>
+          <div class="col">
+            <ol start="11">
+              <li>B</li>
+              <li>D</li>
+              <li>D</li>
+              <li>E</li>
+              <li>C</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================================================================================ -->
+    <!-- END KUNCI -->
+    <!-- SOAL KUIS END-->
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------SCRIPT BUAT LATIHAN SOAL--------------------------------------------------------------->
+    <!-- <script>
+      function kirim() {
+        const soal1 = document.querySelector('#soal1');
+        const soal2 = document.querySelector('#soal2');
+        const soal3 = document.querySelector('#soal3');
+        const soal4 = document.querySelector('#soal4');
+        const soal5 = document.querySelector('#soal5');
+        const soal6 = document.querySelector('#soal6');
+        const soal7 = document.querySelector('#soal7');
+        const soal8 = document.querySelector('#soal8');
+        const soal9 = document.querySelector('#soal9');
+        const soal10 = document.querySelector('#soal10');
+
+        const rno1 = document.querySelector('#rno1');
+        const rno2 = document.querySelector('#rno2');
+        const rno3 = document.querySelector('#rno3');
+        const rno4 = document.querySelector('#rno4');
+        const rno5 = document.querySelector('#rno5');
+        const rno6 = document.querySelector('#rno6');
+        const rno7 = document.querySelector('#rno7');
+        const rno8 = document.querySelector('#rno8');
+        const rno9 = document.querySelector('#rno9');
+        const rno10 = document.querySelector('#rno10');
+        const nilai = document.querySelector('#nilai');
+
+        let response;
+        let poin = 0;
+        if (soal1.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno1.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno1.style = 'color: red;';
+        }
+        rno1.innerHTML = response;
+
+        if (soal2.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno2.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno2.style = 'color: red;';
+        }
+        rno2.innerHTML = response;
+        if (soal3.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno3.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno3.style = 'color: red;';
+        }
+        rno3.innerHTML = response;
+        if (soal4.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno4.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno4.style = 'color: red;';
+        }
+        rno4.innerHTML = response;
+        if (soal5.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno5.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno5.style = 'color: red;';
+        }
+        rno5.innerHTML = response;
+        if (soal6.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno6.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno6.style = 'color: red;';
+        }
+        rno6.innerHTML = response;
+        if (soal7.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno7.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno7.style = 'color: red;';
+        }
+        rno7.innerHTML = response;
+        if (soal8.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno8.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno8.style = 'color: red;';
+        }
+        rno8.innerHTML = response;
+        if (soal9.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno9.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno9.style = 'color: red;';
+        }
+        rno9.innerHTML = response;
+        if (soal10.value == 10) {
+          response = 'Jawaban Kamu Benar';
+          rno10.style = 'color: green;';
+          poin = poin + 10;
+        } else {
+          response = 'Jawaban Kamu Salah';
+          rno10.style = 'color: red;';
+        }
+        rno10.innerHTML = response;
+
+        nilai.innerHTML = poin;
+      }
+    </script> -->
+    <!--------------------------------------------SCRIPT BUAT LATIHAN SOAL-------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    <script>
+      function kirim() {
+        const soal1 = document.querySelector('#soal1');
+        const soal2 = document.querySelector('#soal2');
+        const soal3 = document.querySelector('#soal3');
+        const soal4 = document.querySelector('#soal4');
+        const soal5 = document.querySelector('#soal5');
+        const soal6 = document.querySelector('#soal6');
+        const soal7 = document.querySelector('#soal7');
+        const soal8 = document.querySelector('#soal8');
+        const soal9 = document.querySelector('#soal9');
+        const soal10 = document.querySelector('#soal10');
+        const soal11 = document.querySelector('#soal11');
+        const soal12 = document.querySelector('#soal12');
+        const soal13 = document.querySelector('#soal13');
+        const soal14 = document.querySelector('#soal14');
+        const soal15 = document.querySelector('#soal15');
+
+        const nilai = document.querySelector('#nilai');
+
+        let poin = 0;
+        if (soal1.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal2.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal3.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal4.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal5.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal6.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal7.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal8.checked) {
+          poin = poin + 10;
+        } else {
+        }
+
+        if (soal9.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal10.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal11.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal12.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal13.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal14.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        if (soal15.checked) {
+          poin = poin + 10;
+        } else {
+        }
+        nilai.innerHTML = poin;
+      }
+    </script>
+
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white d-flex justify-content-center">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold fst-italic">I Putu Darma Putra</a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyLpjAEebxZqlFdoySUEDMWWRifU2urXwxF9v1hxTRKIiykIsVivfevalceuEZCMqhM/exec';
+      const form = document.forms['matriks3-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol KIRIM, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //  tambahkan Alert
+            myAlert.classList.toggle('d-none');
+            console.log('Success!', response);
+
+            // form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-4649430696681971"> </amp-auto-ads>
+  </body>
+</html>

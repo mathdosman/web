@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4649430696681971"
+     crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWKYNJM30L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-WWKYNJM30L');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>soal translasi</title>
+  </head>
+  <body id="home">
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+      <div class="container">
+        <a href="../../"><img src="/home/logonew.png" alt="logo" width="55" height="55" class="rounded-circle" /></a>
+        <a class="navbar-brand ms-1 fw-bold" href="/">Math Dosman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/daftarisimateri.html">Daftar Materi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Soal </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/kumpulanSoal/">Soal Latihan</a></li>
+                <li><a class="dropdown-item" href="/soalUlangan/matriks/">Soal Ulangan</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+       <!-- START FORM KUIS -->
+    <section id="kontak">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 p-2">
+            <h2 class="text-center">Latihan Soal Translasi</h2>
+           <p class="text-center fst-italic"> Math_Dosman</p>
+           <div class="bg-danger text-center text-light sticky-top">
+            BATAS WAKTU:
+              <p id="demo" class="fs-3 fw-bold"></p>
+            </div>
+              <form name="translasi01-form">
+              <div class="mb-3">
+                    <label for="materi" class="form-label"><b>Materi</b></label>
+                    <select type="text" id="materi" name="materi" class="form-control" aria-placeholder="materi" required>
+                    <option value="">-- Pilih Materi --</option>
+                    <option value="Translasi">Translasi</option>
+                    </select>
+                </div>
+              <div class="mb-3">
+                <label for="absen" class="form-label"><b> No Absen </b></label>
+                <input type="number" class="form-control" id="absen" aria-describedby="absen" name="absen" required />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="form-label"><b>Nama Lengkap</b></label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required />
+              </div>
+              <div class="mb-3">
+                <label for="kelas" class="form-label"><b>Kelas</b></label>
+                <select type="text" id="kelas" name="kelas" class="form-control" aria-placeholder="kelas" required>
+                  <option value="">-- Pilih Kelas --</option>
+                  <option value="XI MIPA 7">XI MIPA 7</option>
+                  <option value="XI MIPA 8">XI MIPA 8</option>
+                  <option value="XI MIPA 9">XI MIPA 9</option>
+                  <option value="XI IPS 1">XI IPS 1</option>
+                  <option value="XI IPS 2">XI IPS 2</option>
+                  <option value="XI IPS 3">XI IPS 3</option>
+                  <option value="">LAINNYA</option>
+                </select>
+              </div>
+              <hr />
+
+              <ol type="1">
+                <li>Tentukan hasil bayangan titik \(A(3,5) \) oleh translasi \(T\begin{pmatrix}-2 \\ 4 \end{pmatrix}\)!</li>
+                <input type="radio" name="soal1" value="0" />
+                \(A'(5, 1) \)
+                <br />
+                <input type="radio" name="soal1" value="0" />
+                \(A'(3, 7) \)
+                <br />
+                <input type="radio" name="soal1" value="0"  />
+                \(A'(7, -1) \)
+                <br />
+                <input type="radio" name="soal1" value="0" />
+                \(A'(7, 3) \)
+                <br />
+                <input type="radio" name="soal1" value="10"/>
+                \(A'(1, 9) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal1" aria-expanded="false" aria-controls="collapsesoal1" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal1">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y'\end{pmatrix} &= \begin{pmatrix}-2\\4 \end{pmatrix}+\begin{pmatrix}3\\5\end{pmatrix} \\
+                    &= \begin{pmatrix}1\\9 \end{pmatrix}
+                    \end{align}\)
+                    <br>
+                    \(\text{Jadi, bayangan titik } A \text{ adalah } A'(1,9)\)
+                   <b class="text-end"> JAWABAN : E </b>
+                  </div>
+                </div>
+                <hr />
+                <!--========================= soal no 2 ===========================================================================-->
+                <li>Diketahui titik \(P'(4,-12)\) adalah bayangan titik \(P\) oleh translasi \(T=\begin{pmatrix}-9 \\ 8 \end{pmatrix} \). Koordinat titik \(P\) adalah . . .</li>
+                <input type="radio" name="soal2" value="10" />
+                \((13, -20)\)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \((13,-4) \)
+                <br />
+                <input type="radio" name="soal2" value="0"  />
+                \((4,20) \)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \((-5, -4) \)
+                <br />
+                <input type="radio" name="soal2" value="0" />
+                \((-5, -20) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal2" aria-expanded="false" aria-controls="collapsesoal2" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal2">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}4\\-12\end{pmatrix} &= \begin{pmatrix}-9\\8 \end{pmatrix}+\begin{pmatrix}x\\y\end{pmatrix} \\
+                    \begin{pmatrix}4\\-12\end{pmatrix}-\begin{pmatrix}-9\\8 \end{pmatrix}&= \begin{pmatrix}x\\y \end{pmatrix} \\
+                    \begin{pmatrix}x\\y \end{pmatrix} &= \begin{pmatrix}13\\-20 \end{pmatrix}
+                    \end{align}\)
+                    <br>
+                    \(\text{Jadi, titik } P \text{ adalah } (13,-20)\)
+                   <b class="text-end"> JAWABAN : A </b>
+                  </div>
+                </div>
+                <hr />
+                <!--================================================== soal no 3 ======================================================-->
+                <li>Titik \(A\) ditranslasikan oleh \(T=\begin{pmatrix}6 \\ -3 \end{pmatrix}\) menghasilkan titik \(A'(4,-2) \). Koordinat titik \(A\) adalah . . . </li>
+                <input type="radio" name="soal3" value="0"  />
+                \((10, -5) \)
+                <br />
+                <input type="radio" name="soal3" value="0"  />
+                \((10, 1) \)
+                <br />
+                <input type="radio" name="soal3" value="0" />
+                \((2,-1) \)
+                <br />
+                <input type="radio" name="soal3" value="10"/>
+                \((-2, 1) \)
+                <br />
+                <input type="radio" name="soal3" value="0" />
+                \((-2, -1) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal3" aria-expanded="false" aria-controls="collapsesoal3" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal3">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}4\\-2\end{pmatrix} &= \begin{pmatrix}6\\-3 \end{pmatrix}+\begin{pmatrix}x\\y\end{pmatrix} \\
+                    \begin{pmatrix}4\\-2\end{pmatrix}-\begin{pmatrix}6\\-3 \end{pmatrix}&= \begin{pmatrix}x\\y \end{pmatrix} \\
+                    \begin{pmatrix}x\\y \end{pmatrix} &= \begin{pmatrix}-2\\1 \end{pmatrix}
+                    \end{align}\)
+                    <br>
+                    \(\text{Jadi, titik } A \text{ adalah } (-2,1)\)
+                   <b class="text-end"> JAWABAN : D </b>
+                  </div>
+                </div>
+                <hr />
+                <!-- soal no no4 =================================================================================================-->
+                <li>Diketahui translasi \(T \) memetakan titik \(C(-4,2) \) ke titik \(C'(-1, 6) \). Translasi \(T\) akan memetakan titik \(D(3,-2) \) ke titik . . . </li>
+                </li>
+                <input type="radio" name="soal4" value="0" />
+                \(D'(0,4) \)
+                <br />
+                <input type="radio" name="soal4" value="0" />
+                \(D'(0,2) \)
+                <br />
+                <input type="radio" name="soal4" value="0" />
+                \(D'(0,-6) \)
+                <br />
+                <input type="radio" name="soal4" value="10"  />
+                \(D'(6,-6) \)
+                <br />
+                <input type="radio" name="soal4" value="0">
+                \(D'(6,2) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal4" aria-expanded="false" aria-controls="collapsesoal4" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal4">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}-1\\6\end{pmatrix} &= \begin{pmatrix}a\\b \end{pmatrix}+\begin{pmatrix}-4\\2\end{pmatrix} \\
+                    \begin{pmatrix}-1\\6\end{pmatrix}-\begin{pmatrix}-4\\2 \end{pmatrix}&= \begin{pmatrix}a\\b \end{pmatrix} \\
+                    \begin{pmatrix}a\\b \end{pmatrix} &= \begin{pmatrix}3\\-4 \end{pmatrix}
+                    \end{align}\)
+                    Sehingga
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}3\\-4 \end{pmatrix} + \begin{pmatrix}3\\-2 \end{pmatrix} \\ &= \begin{pmatrix}6\\-6 \end{pmatrix}
+                    \end{align}\)
+                    <br>
+                    \(\text{Jadi, bayangan titik } D \text{ adalah } D'(6,-6)\)
+                   <b class="text-end"> JAWABAN : D </b>
+                  </div>
+                </div>
+                <hr />
+                <!-- soal no 5 ================================================================================================-->
+                <li>Segitiga \(PQR\) mempunyai koordinat \(P(-3,4) \), \(Q(-1,0)\) dan \(R(0,2) \). Segitiga ditranslasikan oleh \(T\) menghasilkan bayangan segitiga \(P'Q'R'\). Jika koordinat titik \(P'(1,-2) \), koordinat titik \(Q'\) dan \(R'\) berturut-turut adalah . . . </li>
+                <input type="radio" name="soal5" value="10"/>
+                \((3,-6) \) dan \((4,-4) \)
+                <br />
+                <input type="radio" name="soal5" value="0" />
+                \((3,-6) \) dan \((-4,4) \)
+                <br />
+                <input type="radio" name="soal5" value="0"/>
+                \((-3,6) \) dan \((4,-4) \)
+                <br />
+                <input type="radio" name="soal5" value="0"/>
+                \((-3,6) \) dan \((-4,4) \)
+                <br />
+                <input type="radio" name="soal5" value="0" />
+                \((-3,-6) \) dan \((4,-4) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal5" aria-expanded="false" aria-controls="collapsesoal5" >
+                  Alternatif Penyelesaian:
+                  </button>
+                  <div class="collapse" id="collapsesoal5">
+                    <div class="card card-body overflow-auto">
+                      \(\begin{align}
+                      \begin{pmatrix}1\\-2\end{pmatrix} &= \begin{pmatrix}a\\b \end{pmatrix}+\begin{pmatrix}-3\\4\end{pmatrix} \\
+                      \begin{pmatrix}1\\-2\end{pmatrix}-\begin{pmatrix}-3\\4 \end{pmatrix}&= \begin{pmatrix}a\\b \end{pmatrix} \\
+                      \begin{pmatrix}a\\b \end{pmatrix} &= \begin{pmatrix}4\\-6 \end{pmatrix}
+                      \end{align}\)
+                      Sehingga
+
+                      \(\begin{align}
+                      Q' \to \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}4\\-6 \end{pmatrix} + \begin{pmatrix}-1\\0 \end{pmatrix} \\ &= \begin{pmatrix}3\\-6 \end{pmatrix}
+                      \end{align}\)
+                      <br>
+                      \(\begin{align}
+                      R' \to \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}4\\-6 \end{pmatrix} + \begin{pmatrix}0\\2 \end{pmatrix} \\ &= \begin{pmatrix}4\\-4 \end{pmatrix}
+                      \end{align}\)
+                      <br>
+                      \(\text{Jadi, titik } Q' \text{ dan }R' \text{ berturut-turut adalah }\) \((3,-6) \text{ dan } (4,-4)\) 
+                     <b class="text-end"> JAWABAN : A </b>
+                    </div>
+                  </div>
+                <hr />
+                <!-- =====SOAL NO 6======================================================================= -->
+                <li>Diketahui titik \(P'(3,-13) \) adalah bayangan titik \(P\) oleh translasi \(T=\begin{pmatrix}-10\\7 \end{pmatrix} \). Koordinat titik \(P\) adalah . . . </li>
+                <input type="radio" name="soal6" value="10" />
+                \((13,-20) \)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \((13,-4) \)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \((4,20) \)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \((-5,-4) \)
+                <br />
+                <input type="radio" name="soal6" value="0" />
+                \((-5,-20) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal6" aria-expanded="false" aria-controls="collapsesoal6" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal6">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}3\\-13\end{pmatrix} &= \begin{pmatrix}-10\\7 \end{pmatrix}+\begin{pmatrix}x\\y\end{pmatrix} \\
+                    \begin{pmatrix}3\\-13\end{pmatrix}-\begin{pmatrix}-10\\7 \end{pmatrix}&= \begin{pmatrix}x\\y \end{pmatrix} \\
+                    \begin{pmatrix}x\\y \end{pmatrix} &= \begin{pmatrix}13\\-20 \end{pmatrix}
+                    \end{align}\)
+                   <b class="text-end"> JAWABAN : A </b>
+                  </div>
+                </div>
+                <hr />
+                <!-- =====SOAL NO 7======================================================================= -->
+                <li>Titik \(A(7, -6)\) ditranslasikan oleh \(T = (-2, 4)\), maka koordinat titik \(A'\) adalah . . .</li>
+                <input type="radio" name="soal7" value="0" />
+                \((9, -10) \)
+                <br />
+                <input type="radio" name="soal7" value="0" />
+                \((-5,-2)\)
+                <br />
+                <input type="radio" name="soal7" value="10"/>
+                \((5,-2)\)
+                <br />
+                <input type="radio" name="soal7" value="0"  />
+                \((-9,10)\)
+                <br />
+                <input type="radio" name="soal7" value="0" />
+                \((10,9)\)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal7" aria-expanded="false" aria-controls="collapsesoal7" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal7">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y'\end{pmatrix} &= \begin{pmatrix}-2\\4 \end{pmatrix}+\begin{pmatrix}7\\-6\end{pmatrix} \\
+                    &= \begin{pmatrix}5\\-2 \end{pmatrix}
+                    \end{align}\)
+                    <br>
+                    \(\text{Jadi, bayangan titik } A \text{ adalah } A'(5,-2)\)
+                   <b class="text-end"> JAWABAN : C </b>
+                  </div>
+                </div>
+                <hr />
+                <!-- =====SOAL NO 8======================================================================= -->
+                <li>Jika titik \(G'(4, -1)\) adalah bayangan titik dari \(G(7, -5)\) oleh translasi \(T\), maka nilai \(T\) adalah . . . </li>
+                <input type="radio" name="soal8" value="0" />
+                \((2,5) \)
+                <br />
+                <input type="radio" name="soal8" value="10"/>
+                \((-3,4) \)
+                <br />
+                <input type="radio" name="soal8" value="0"  />
+                \((1,7) \)
+                <br />
+                <input type="radio" name="soal8" value="0"  />
+                \((4,2) \)
+                <br />
+                <input type="radio" name="soal8" value="0" />
+                \((-2,3) \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal8" aria-expanded="false" aria-controls="collapsesoal8" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal8">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}4\\-1\end{pmatrix} &= \begin{pmatrix}a\\b \end{pmatrix}+\begin{pmatrix}7\\-5\end{pmatrix} \\
+                    \begin{pmatrix}4\\-1\end{pmatrix}-\begin{pmatrix}7\\-5 \end{pmatrix}&= \begin{pmatrix}a\\b \end{pmatrix} \\
+                    \begin{pmatrix}a\\b \end{pmatrix} &= \begin{pmatrix}-3\\4 \end{pmatrix}
+                    \end{align}\)
+                   <b class="text-end"> JAWABAN : B </b>
+                  </div>
+                </div>
+                <hr />
+                <!-- =====SOAL NO 9======================================================================= -->
+                <li>Diketahui koordinat titik \(P\) adalah \((2c,3)\). Oleh karena translasi \(\begin{pmatrix}c\\-3\end{pmatrix} \) diperoleh bayangan titik \(P\) yaitu \(P'(3,0) \), maka nilai \(c\) adalah . . . </li>
+                <input type="radio" name="soal9" value="0" />
+                \(-3\)
+                <br />
+                <input type="radio" name="soal9" value="0" />
+                \(-2\)
+                <br />
+                <input type="radio" name="soal9" value="0"  />
+                \(-1\)
+                <br />
+                <input type="radio" name="soal9" value="10"/>
+                \(1\)       <br />
+                <input type="radio" name="soal9" value="0" />
+                \(2\)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal9" aria-expanded="false" aria-controls="collapsesoal9" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal9">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}3\\0\end{pmatrix} &= \begin{pmatrix}c\\-3 \end{pmatrix}+\begin{pmatrix}2c\\3\end{pmatrix} \\
+                    \begin{pmatrix}3\\0 \end{pmatrix}&= \begin{pmatrix}3c\\0 \end{pmatrix} \\
+                    \text{Sehingga}\\
+                    3&=3c\\
+                    c&=1
+                    \end{align}\)
+                    <br>
+                   <b class="text-end"> JAWABAN : D </b>
+                  </div>
+                </div>
+                <hr />
+                <!-- =====SOAL NO 10======================================================================= -->
+                <li>Diketahui koordinat titik \(P\) adalah \((4,-1)\). Oleh karena translasi \(\begin{pmatrix}2\\a\end{pmatrix} \) diperoleh bayangan titik \(P\) yaitu \(P'(-2a,-4) \), maka nilai \(a\) adalah . . . </li>
+                <input type="radio" name="soal10" value="10" />
+                \(-3\)
+                <br />
+                <input type="radio" name="soal10" value="0" />
+                \(-1\)
+                <br />
+                <input type="radio" name="soal10" value="0" />
+                \(0\)
+                <br />
+                <input type="radio" name="soal10" value="0" />
+                \(1\)
+                <br />
+                <input type="radio" name="soal10" value="0" />
+                \(3\)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal10" aria-expanded="false" aria-controls="collapsesoal10" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal10">
+                  <div class="card card-body overflow-auto">
+                    \(\begin{align}
+                    \begin{pmatrix}-2a\\-4\end{pmatrix} &= \begin{pmatrix}2\\a \end{pmatrix}+\begin{pmatrix}4\\-1\end{pmatrix} \\
+                    \begin{pmatrix}-2a\\-4 \end{pmatrix}&= \begin{pmatrix}6\\a-1 \end{pmatrix} \\
+                    \text{Sehingga}\\
+                    -2a&=6\\
+                    a&=-3 \\
+                    \text{atau}\\
+                    -4&=a-1\\
+                    a&=-3
+                    \end{align}\)
+                    <br>
+                    \(\text{Jadi, nilai } a \text{ adalah } -3\)
+                   <b class="text-end"> JAWABAN : A </b>
+                  </div>
+                </div>
+                <hr />
+                <li>Jika garis \(2x-3y+7=0\) ditranslasikan oleh \(\begin{pmatrix}-2\\3 \end{pmatrix} \), bayangannya berbentuk . . . </li>
+                <input type="radio" name="soal11" value="10" />
+                \(2x-3y+20=0\)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(2x-3y+13=0\)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(2x-3y+6=0\)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(3x-2y+13=0\)
+                <br />
+                <input type="radio" name="soal11" value="0" />
+                \(3x-2y+20=0\)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal11" aria-expanded="false" aria-controls="collapsesoal11" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal11">
+                  <div class="card card-body overflow-auto">
+                    misalkan (x,y) berada pada garis, maka
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y'\end{pmatrix} &= \begin{pmatrix}-2\\3 \end{pmatrix}+\begin{pmatrix}x\\y\end{pmatrix} \\
+                    \begin{pmatrix}x'\\y' \end{pmatrix}&= \begin{pmatrix}-2+x\\3+y \end{pmatrix} \\
+                    \text{Sehingga}\\
+                    x'&=-2+x  &\to x=x'+2\\
+                    y'&=3+y  &\to y=y'-3\\
+                    \end{align}\)
+                    <br>
+                    \(\begin{align} 
+                    2x-3y+7&=0 \\
+                    2(x'+2)-3(y'-3)+7&=0\\
+                    2x'+4-3y'+9+7&=0\\
+                    2x'-3y'+20&=0
+                    \end{align}\)
+                    <br>
+                    \(\text{Jadi, bayangan garisnya }  \text{adalah } 2x-3y+20=0\)
+                   <b class="text-end"> JAWABAN : A </b>
+                  </div>
+                </div>
+                <hr />
+                <li>Bayangan dari lingkaran \((x-3)^2+(y+4)^2 =9 \) karena translasi \(\begin{pmatrix}2\\1 \end{pmatrix}\) adalah . . . </li>
+                <input type="radio" name="soal12" value="0" />
+                \(x^2 + y^2 -10x +6y +9 =0\)
+                <br />
+                <input type="radio" name="soal12" value="0" />
+                \(x^2 + y^2 -10x +6y +16 =0\)
+                <br />
+                <input type="radio" name="soal12" value="10"/>
+                \(x^2 + y^2 -10x +6y +25 =0\)
+                <br />
+                <input type="radio" name="soal12" value="0" />
+                \(x^2 + y^2 -6x +10y +25 =0\)
+                <br />
+                <input type="radio" name="soal12" value="0" />
+                \(x^2 + y^2 -6x +10y +16 =0\)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal12" aria-expanded="false" aria-controls="collapsesoal12" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal12">
+                  <div class="card card-body overflow-auto">
+                    misalkan (x,y) berada pada kurva, maka
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}2\\1 \end{pmatrix} + \begin{pmatrix}x\\y \end{pmatrix} \\
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}2+x \\ 1+y \end{pmatrix} \\
+                    \text{Sehingga}\\
+                    x' &= 2+ x &\to x=x'-2 \\
+                    y'&=1+y &\to y=y'-1
+                    \end{align}\)
+                    substitusi x dan y ke kurva
+                    \(\begin{align} 
+                    (x-3)^2+(y+4)^2 &=9 \\
+                    (x'-2-3)^2 + (y'-1+4)^2 &=9 \\
+                    (x'-5)^2 + (y'+3)^2 &=9 \\
+                    (x')^2-10x'+25+(y)^2+6y'+9-9&=0 \\
+                    (x')^2+(y')^2 -10x'+6y'+25 &=0
+                    \end{align}\)
+                    <br>
+                    Jadi, bayangan lingkarannya adalah  \(x^2 +y^2-10x+6y+25 =0\)
+                   <b class="text-end"> JAWABAN : C </b>
+                  </div>
+                </div>
+                <hr />
+
+                <li> Jika parabola \(y=-x^2-4x+7\) ditranslasikan oleh \(\begin{pmatrix}-1\\-3 \end{pmatrix} \), bayangannya berbentuk . . . </li>
+                <input type="radio" name="soal13" value="0"  />
+                \(y=x^2-6x-1 \)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(y=x^2+6x-1 \)
+                <br />
+                <input type="radio" name="soal13" value="10"/>
+                \(y=-x^2-6x-1 \)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(y=x^2+6x+1 \)
+                <br />
+                <input type="radio" name="soal13" value="0" />
+                \(y=-x^2+6x+1 \)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal13" aria-expanded="false" aria-controls="collapsesoal13" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal13">
+                  <div class="card card-body overflow-auto">
+                    misalkan (x,y) berada pada kurva, maka
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}-1\\-3 \end{pmatrix} + \begin{pmatrix}x\\y \end{pmatrix} \\
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}-1+x \\ -3+y \end{pmatrix} \\
+                    \text{Sehingga}\\
+                    x' &= -1+ x &\to x=x'+1 \\
+                    y'&=-3+y &\to y=y'+3
+                    \end{align}\)
+                    substitusi x dan y ke kurva
+                    \(\begin{align}
+                    y&=-x^2-4x+7 \\
+                    y'+3 &= -(x'+1)^2 -4(x'+1)+7 \\
+                    y'+3 &= -((x')^2 +2x'+1)-4x'-4+7 \\
+                    y' +3 &= -(x')^2 -2x'-1-4x'+3 \\
+                    y'&= -(x')^2-6x'-1
+                    \end{align}\)
+                    <br>
+                    Jadi, bayangan parabolanya adalah  \(y=-x^2-6x-1\)
+                   <b class="text-end"> JAWABAN : C </b>
+                  </div>
+                </div>
+                <hr />
+
+                <li>Bayangan dari lingkaran \((x-2)^2+(y+4)^2 =7 \) karena translasi \(\begin{pmatrix}-5\\-2 \end{pmatrix}\) adalah . . .  </li>
+                <input type="radio" name="soal14" value="0"  />
+                \((x+3)^2 +(y+6)^2 = -38\)
+                <br />
+                <input type="radio" name="soal14" value="0" />
+                \((x+3)^2 +(y-6)^2 = 14\)
+                <br />
+                <input type="radio" name="soal14" value="0" />
+                \((x+3)^2 +(y+6)^2 = 36\)
+                <br />
+                <input type="radio" name="soal14" value="0" />
+                \((x-3)^2 +(y+6)^2 = 7\)
+                <br />
+                <input type="radio" name="soal14" value="10"/>
+                \((x+3)^2 +(y+6)^2 = 7\)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal14" aria-expanded="false" aria-controls="collapsesoal14" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal14">
+                  <div class="card card-body overflow-auto">
+                    misalkan (x,y) berada pada garis, maka
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}-5\\-2 \end{pmatrix}+ \begin{pmatrix}x\\y \end{pmatrix} \\
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}-5+x\\-2+y \end{pmatrix} \\
+                    \text{Sehingga} \\
+                    x'&=-5+x &\to x=x'+5 \\
+                    y'&=-2+y &\to y=y'+2
+                    \end{align}\)
+                    <br>
+                    SUbstistusi nilai x dan y ke kurva
+                    \(\begin{align}
+                    (x-2)^2+(y+4)^2 &=7 \\
+                    (x'+5-2)^2+(y'+2+4)^2 &=7 \\
+                    (x'+3)^2 + (y'+6)^2 &=7 \\
+                    \end{align}\)
+                    Jadi, bayangan lingkarannya adalah  \((x+3)^2 + (y+6)^2 =7\)
+                   <b class="text-end"> JAWABAN : E </b>
+                  </div>
+                </div>
+                <hr />
+
+                <li>Jika garis \(x-5y-12=0\) ditranslasikan oleh \(\begin{pmatrix}4\\-5 \end{pmatrix} \), bayangannya berbentuk . . . </li>
+                <input type="radio" name="soal15" value="10"/>
+                \(x-5y=41\)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(x+5y=41\)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(-x+5y=41\)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(5x-y=41\)
+                <br />
+                <input type="radio" name="soal15" value="0" />
+                \(5x+y=41\)
+                <br>
+                <button class="btn btn-secondary mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesoal15" aria-expanded="false" aria-controls="collapsesoal15" >
+                Alternatif Penyelesaian:
+                </button>
+                <div class="collapse" id="collapsesoal15">
+                  <div class="card card-body overflow-auto">
+                    misalkan (x,y) berada pada garis, maka
+                    \(\begin{align}
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}4\\-5 \end{pmatrix}+ \begin{pmatrix}x\\y \end{pmatrix} \\
+                    \begin{pmatrix}x'\\y' \end{pmatrix} &= \begin{pmatrix}4+x\\-5+y \end{pmatrix} \\
+                    \text{Sehingga} \\
+                    x'&=4+x &\to x=x'-4 \\
+                    y'&=-5+y &\to y=y'+5
+                    \end{align}\)
+                    <br>
+                    SUbstistusi nilai x dan y ke kurva
+                    \(\begin{align}
+                    x-5y-12&=0 \\
+                    (x'-4)-5(y'+5)-12 &=0 \\
+                    x'-4 -5y'-25-12 &=0 \\
+                    x'-5y'-41 &=0 \\
+                    x'-5y' &= 41
+                    \end{align}\)
+                    Jadi, bayangan garisnya adalah  \(x-5y=41\)
+                   <b class="text-end"> JAWABAN : A </b>
+                  </div>
+                </div>
+                <hr />
+              </ol>
+              <!-- ------------------------------------------------------------------------------------------------------------------- -->
+              <!-- Batas no SOAL -->
+              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Terima kasih</strong> Jawaban sudah tersimpan.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="row justify-content-center text-center">
+                <div class="col">
+                  <button type="submit" class="btn btn-primary btn-kirim" onclick="kirim()">KIRIM JAWABAN</button>
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3 d-block p-2">
+            <div class="list-group sticky-sm-top">
+              <a href="../transformasiGeometri/" class="list-group-item list-group-item-action active" aria-current="true"> Transformasi Geometri </a>
+              <a href="../transformasiGeometri/translasisoal.html" class="list-group-item list-group-item-action">Latihan Soal Translasi</a>
+              <a href="../transformasiGeometri/refleksiSoal.html" class="list-group-item list-group-item-action">Latihan Soal Refleksi</a>
+              <a href="../transformasiGeometri/rotasiSoal.html" class="list-group-item list-group-item-action">Latihan Soal Rotasi</a>
+              <a href="../transformasiGeometri/dilatasiSoal.html" class="list-group-item list-group-item-action">Latihan Soal Dilatasi</a>
+              <a href="../transformasiGeometri/tgkomposisi.html" class="list-group-item list-group-item-action">Latihan Soal Transformasi Komposisi</a>
+              <a href="../transformasiGeometri/transgeo1.html" class="list-group-item list-group-item-action">Latihan Soal Transformasi Geometri I</a>
+              <a href="../transformasiGeometri/transgeo2.html" class="list-group-item list-group-item-action">Latihan Soal Transformasi Geometri II</a>
+              <a href="../../kumpulanMateri/transformasi/" class="list-group-item list-group-item-action">Materi Transformasi Geometri</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- SOAL KUIS END-->
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- PERHITUNGAN WAKTU -->
+    <script>
+    // Mengatur waktu akhir perhitungan mundur
+    var countDownDate = new Date("Oct 23, 2022 23:59:59").getTime();
+    
+    // Memperbarui hitungan mundur setiap 1 detik
+    var x = setInterval(function() {
+    
+      // Untuk mendapatkan tanggal dan waktu hari ini
+      var now = new Date().getTime();
+        
+      // Temukan jarak antara sekarang dan tanggal hitung mundur
+      var distance = countDownDate - now;
+        
+      // Perhitungan waktu untuk hari, jam, menit dan detik
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Keluarkan hasil dalam elemen dengan id = "demo"
+      document.getElementById("demo").innerHTML = days + " hari, " + hours + " jam, "
+      + minutes + " menit, " + seconds + " detik. ";
+        
+      // Jika hitungan mundur selesai, tulis beberapa teks 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+    <!-- END PERHITUNGAN WAKTU -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxPa8l4kdIIbdbD9JGaSpkbtTrDhXIAJ_82_4VomsZZIxHvmNrHX9AGRA2pXndXfVwz/exec';
+      const form = document.forms['translasi01-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // ketika tombol submit di klik
+        // tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            // tampilkan tombol KIRIM, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //  tambahkan Alert
+            myAlert.classList.toggle('d-none');G-WWKYNJM30L
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <!-- footer start -->
+    <footer class="bg-primary text-center text-white d-flex justify-content-center">
+      <p>
+        Created with
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="https://www.facebook.com/darmaputra.esc" class="text-white fw-bold fst-italic" style="text-decoration: none">I Putu Darma Putra</a>
+      </p>
+    </footer>
+    <!-- footer end -->
+    <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-4649430696681971">
+</amp-auto-ads>
+  </body>
+</html>
